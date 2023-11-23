@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <button>clique moi</button>
+    <script>
+      function infobutton() {
+        let prenom = prompt("Quel est to n nom");
+        let nom = prompt("Quel est ton nom?");
+        alert("Merci" + ", nous te contacterons bientot");
+      }
+
+      let clickMoi = document.querySelector("button");
+      clickMoi.addEventListener("click", infobutton);
+    </script>
+  </body>
+</html>
